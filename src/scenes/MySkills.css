@@ -1,0 +1,27 @@
+#education{
+    transition: all 1s ;
+}
+#education-parent:hover #education{
+    background-image: url("../assets/college2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#cbse12-child{
+    transition: all 1s ;
+}
+#cbse10-child{
+    transition: all 1s ;
+}
+#cbse12:hover #cbse12-child{
+    background-image: url("../assets/School\ 12th.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#cbse10:hover #cbse10-child{
+    background-image: url("../assets/ngfs-announcement.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
