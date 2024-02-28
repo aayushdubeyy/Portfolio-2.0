@@ -20,7 +20,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] h-[475px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] h-[475px] md:max-w-[600px]"
               // src="assets/profile-image.png"
               src={aayushtwo}
             />
@@ -87,10 +87,11 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-9 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>
+          
         </motion.div>
 
         <motion.div

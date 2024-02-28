@@ -7,12 +7,12 @@ import js from "../assets/Javascript.svg"
 import express from "../assets/Express.png"
 import tailwind from "../assets/Tailwind.png"
 import git from "../assets/Git.svg"
-import github from "../assets/Github.svg"
 import github_logo from "../assets/github-logo.svg"
 import react from "../assets/React.png"
 import mongodb from "../assets/MongoDB.svg"
 import redux from "../assets/Redux.svg"
 import node from "../assets/NodeJs.svg"
+import nextt from "../assets/next.svg"
 import "./MySkills.css"
 // import college from "../assets/college.jpg"
 const MySkills = () => {
@@ -51,12 +51,15 @@ const MySkills = () => {
             <img src={express} alt="" className="w-10 h-10 transition-all duration-200 delay-200 hover:scale-125"/>
 
           </div>
+          
             <div className="mt-10 mb-10 flex gap-3">
               <img src={git} alt="" className="w-10 h-10 transition-all duration-200 delay-200 hover:scale-125"/>
             <img src={github_logo} alt="" className="w-10 h-10 transition-all duration-200 delay-200 hover:scale-125"/>
             <img src={mongodb} alt="" className="w-10 h-10 transition-all duration-200 delay-200 hover:scale-125"/>
             <img src={node} alt="" className="w-10 h-10 transition-all duration-200 delay-200 hover:scale-125"/>
+            <img src={nextt} alt="" className="w-12 h-10 transition-all duration-200 delay-200 hover:scale-125 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert rounded-full"/>
             </div>
+            
           </div>
         </motion.div>
 
