@@ -6,7 +6,8 @@ import modern_chair from "../assets/modern-chair.png";
 import plat_code from "../assets/plat-code.png";
 import tripy_trips from "../assets/tripy-trips.png";
 import razorpay_clone from "../assets/razorpay-clone.png";
-import discord_clone from "../assets/discord-clone.png";
+// import discord_clone from "../assets/discord-clone.png";
+import promptopia from "../assets/Promptopia.png";
 const container = {
   hidden: {},
   visible: {
@@ -21,7 +22,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, imgSrc, para  }) => {
+const Project = ({ title, imgSrc, para }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("_").toLowerCase();
@@ -30,9 +31,7 @@ const Project = ({ title, imgSrc, para  }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          {para}
-        </p>
+        <p className="mt-7">{para}</p>
       </div>
       <img src={imgSrc} alt={projectTitle} />
     </motion.div>
@@ -63,7 +62,9 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        I’m passionate about creating stunning, user-friendly designs for new projects, while ensuring a responsive and efficient backend experience.
+          I’m passionate about creating stunning, user-friendly designs for new
+          projects, while ensuring a responsive and efficient backend
+          experience. See github for project links :)
         </p>
       </motion.div>
 
@@ -79,24 +80,53 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[422px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Study Notion" imgSrc={study_notion} para="Study Notion is an Edtech platform which is cloud based. It is fully function for both students and teacher and is totally scalable."/>
-          <Project title="Shop with Ecomzy" imgSrc={shop_with_ecomzy} para="Shopping beautiful accessories is much more rewarding when the website is beautiful too!"/>
+          <Project
+            title="Study Notion"
+            imgSrc={study_notion}
+            para="Study Notion is an Edtech platform which is cloud based. It is fully function for both students and teacher and is totally scalable."
+          />
+          <Project
+            title="Promptopia"
+            imgSrc={promptopia}
+            para="Want prompts for AI without asking AI, don't worry I gotchu :)"
+          />
+          <Project
+            title="Shop with Ecomzy"
+            imgSrc={shop_with_ecomzy}
+            para="Shopping beautiful accessories is much more rewarding when the website is beautiful too!"
+          />
 
           {/* ROW 2 */}
-          <Project title="Modern Chair" imgSrc={modern_chair} para="Who would've thought buying a simple chair can be so rewarding? This UI did."/>
-          <Project title="Plat-Code" imgSrc={plat_code} para="You know how your child gets good marks even when he never completes his homework? He uses Plat-Code ofcourse."/>
-          <Project title="Tripy Trips" imgSrc={tripy_trips} para="My friends always like to backout at last moment. Maybe we can go together? Time for Trippy trips :)"/>
+          <Project
+            title="Modern Chair"
+            imgSrc={modern_chair}
+            para="Who would've thought buying a simple chair can be so rewarding? This UI did."
+          />
+          <Project
+            title="Plat-Code"
+            imgSrc={plat_code}
+            para="You know how your child gets good marks even when he never completes his homework? He uses Plat-Code ofcourse."
+          />
+          <Project
+            title="Tripy Trips"
+            imgSrc={tripy_trips}
+            para="My friends always like to backout at last moment. Maybe we can go together? Time for Trippy trips :)"
+          />
 
           {/* ROW 3 */}
-          <Project title="Razorpay Clone" imgSrc={razorpay_clone} para="Nobody like clones but since payment should be safe, I thought it would be a 'safe' bet."/>
-          <Project title="Discord Clone" imgSrc={discord_clone} para='This project is proof that simple things can be beautiful too (like me?).'/>
+          <Project
+            title="Razorpay Clone"
+            imgSrc={razorpay_clone}
+            para="Nobody like clones but since payment should be safe, I thought it would be a 'safe' bet."
+          />
+          {/* <Project title="Discord Clone" imgSrc={discord_clone} para='This project is proof that simple things can be beautiful too (like me?).'/> */}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[422px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
